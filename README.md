@@ -1,4 +1,4 @@
-Overview
+Overview [![Build Status](https://secure.travis-ci.org/ScrappyAcademy/store_engine.png?branch=master)](http://travis-ci.org/ScrappyAcademy/store_engine)
 ========
 
 Welcome to the [Scrappy Academy](http://scrappyacademy.com/)'s group project tackling [Store Engine](http://tutorials.jumpstartlab.com/projects/store_engine.html) from [JumpstartLab](http://jumpstartlab.com/).
