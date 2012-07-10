@@ -1,4 +1,4 @@
-Overview [![Build Status](https://secure.travis-ci.org/ScrappyAcademy/store_engine.png?branch=master)](http://travis-ci.org/ScrappyAcademy/store_engine)
+Overview [![Build Status](https://secure.travis-ci.org/ScrappyAcademy/store_engine.png?branch=master)](http://travis-ci.org/ScrappyAcademy/store_engine) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/ScrappyAcademy/store_engine)
 ========
 
 Welcome to the [Scrappy Academy](http://scrappyacademy.com/)'s group project tackling [Store Engine](http://tutorials.jumpstartlab.com/projects/store_engine.html) from [JumpstartLab](http://jumpstartlab.com/).
@@ -22,6 +22,7 @@ Goals
   * [Rspec](http://rspec.info)
   * [Sass](http://sass-lang.com)
   * [Haml](http://haml.info)
+  * [CoffeeScript](http://coffeescript.org)
 * Use TDD to drive all layers of Rails development including unit, integration, and user acceptance tests
 * Utilize [Travis-CI](http://travis-ci.org/) as a continuous integration service
 * Practice mixing HTML, CSS, and Rails templates to create an inviting and usable User Interface
@@ -63,7 +64,7 @@ Travis-CI (Optional)
 
 If you decided to maintain a personal fork, you'll probably want to use
 Travis-CI for it, which is awesome! It's always good to have more continuous
-testing. The project is already setup (TODO: ADD commit link here) to work on Travis. All you need to do is (per the [getting started doc](http://about.travis-ci.org/docs/user/getting-started/)):
+testing. The project is already setup (http://travis-ci.org/ScrappyAcademy/store_engine) to work on Travis. All you need to do is (per the [getting started doc](http://about.travis-ci.org/docs/user/getting-started/)):
 
 1. Sign in to Travis-CI with your [GitHub account](http://travis-ci.org/users/auth/github).
 
@@ -89,9 +90,9 @@ TODO
 Workflow
 --------
 
-Since the team is largely distributed and needs to work asynchronously
-the [GitHub workflow](http://scottchacon.com/2011/08/31/github-flow.html) meets
-these needs. The workflow boils down to:
+Since the team is largely distributed and needs to work asynchronously,
+the [GitHub workflow](http://scottchacon.com/2011/08/31/github-flow.html)
+seems the best fit to meet these needs. The workflow boils down to:
 
 * Everyone has full access
 * Use the [campfire chatroom](https://scrappyacademy.campfirenow.com)
@@ -166,6 +167,7 @@ If you need some help on various topics check out the tutorials below:
 * [RVM](http://tutorials.jumpstartlab.com/topics/environment/rvm.html)
 * [Bundler](http://tutorials.jumpstartlab.com/topics/environment/bundler.html)
 * Git & Git Workflow
+  * [Try GitHub](http://try.github.com)
   * [Common Git Practices](http://tutorials.jumpstartlab.com/topics/environment/git_strategy.html)
   * [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html)
   * [How GitHub Works](http://zachholman.com/posts/how-github-works/)
