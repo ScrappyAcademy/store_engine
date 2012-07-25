@@ -9,6 +9,9 @@
 %p
   %b Price:
   = @product.price
+%p
+  %b Retired:
+  = @product.retired
 
 = link_to 'Edit', edit_product_path(@product)
 \|
