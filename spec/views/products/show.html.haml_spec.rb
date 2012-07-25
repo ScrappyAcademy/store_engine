@@ -5,7 +5,8 @@ describe "products/show" do
     @product = assign(:product, stub_model(Product,
       :title => "Title",
       :description => "MyText",
-      :price => "9.99"
+      :price => "9.99",
+      :retired => true
     ))
   end
 
@@ -15,5 +16,6 @@ describe "products/show" do
     rendered.should match(/Title/)
     rendered.should match(/MyText/)
     rendered.should match(/9.99/)
+    rendered.should match(/true/)
   end
 end
