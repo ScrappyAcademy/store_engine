@@ -1,4 +1,6 @@
 ScrappyOrgStoreEngine::Application.routes.draw do
+  resources :categories
+
   resources :products
 
   # The priority is based upon order of creation:
