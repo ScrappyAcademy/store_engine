@@ -5,4 +5,6 @@ class Product < ActiveRecord::Base
   validates :description, presence:true, length: {minimum: 1}
 
   scope :retired, where(:retired => true)
+
+  has_many :categorizations 
 end
