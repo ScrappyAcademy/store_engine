@@ -7,4 +7,11 @@ class Product < ActiveRecord::Base
   scope :retired, where(:retired => true)
 
   has_many :categorizations 
+
+  has_many :categories, through: :categorizations 
+
+  def category_list
+    return self.categories.join(", ")
+  end
+
 end
