@@ -6,7 +6,6 @@ describe "users/show" do
       :name => "Name",
       :email => "Email",
       :password => "Password",
-      :salt => "Salt"
     ))
   end
 
@@ -16,6 +15,5 @@ describe "users/show" do
     rendered.should match(/Name/)
     rendered.should match(/Email/)
     rendered.should match(/Password/)
-    rendered.should match(/Salt/)
   end
 end

@@ -6,7 +6,6 @@ describe "users/new" do
       :name => "MyString",
       :email => "MyString",
       :password => "MyString",
-      :salt => "MyString"
     ).as_new_record)
   end
 
@@ -18,7 +17,6 @@ describe "users/new" do
       assert_select "input#user_name", :name => "user[name]"
       assert_select "input#user_email", :name => "user[email]"
       assert_select "input#user_password", :name => "user[password]"
-      assert_select "input#user_salt", :name => "user[salt]"
     end
   end
 end

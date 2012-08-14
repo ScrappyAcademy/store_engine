@@ -9,9 +9,6 @@
 %p
   %b Password:
   = @user.password
-%p
-  %b Salt:
-  = @user.salt
 
 = link_to 'Edit', edit_user_path(@user)
 \|
