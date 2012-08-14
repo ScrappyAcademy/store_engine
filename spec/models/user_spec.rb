@@ -3,7 +3,7 @@ require 'spec_helper'
 describe User do
 
   before do
-    @user = User.new(name: "Example User", email: "user@example.com", password: "example")
+    @user = User.new(name: "Ricky Bobby", email: "rb@insane.com", password: "twoFirstnames!")
   end
 
   subject {@user}
@@ -39,7 +39,7 @@ describe User do
     end
   end
 
-  describe "when email formait is valid" do
+  describe "when email format is valid" do
     it "should be valid"  do
       addresses = %w[user@scrappy.COM a_US-er@f.b.org user.lst@bar.jp a+b@baz.cn]
       addresses.each do |valid_address|
@@ -50,8 +50,13 @@ describe User do
   end
 
   describe "when password is not present" do
-    before { @user.password = " " }
-    it { should_not be_valid}
+    before { @user.password = "" }
+    it { should_not be_valid }
+  end
+
+  describe "when password is too short" do
+    before { @user.password = "short" }
+    it { should_not be_valid }
   end
 
 end
