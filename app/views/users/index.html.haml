@@ -5,7 +5,6 @@
     %th Name
     %th Email
     %th Password
-    %th Salt
     %th
     %th
     %th
@@ -15,7 +14,6 @@
       %td= user.name
       %td= user.email
       %td= user.password
-      %td= user.salt
       %td= link_to 'Show', user
       %td= link_to 'Edit', edit_user_path(user)
       %td= link_to 'Destroy', user, data: {confirm: 'Are you sure?'},

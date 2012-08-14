@@ -7,13 +7,11 @@ describe "users/index" do
         :name => "Name",
         :email => "Email",
         :password => "Password",
-        :salt => "Salt"
       ),
       stub_model(User,
         :name => "Name",
         :email => "Email",
         :password => "Password",
-        :salt => "Salt"
       )
     ])
   end
@@ -24,6 +22,5 @@ describe "users/index" do
     assert_select "tr>td", :text => "Name".to_s, :count => 2
     assert_select "tr>td", :text => "Email".to_s, :count => 2
     assert_select "tr>td", :text => "Password".to_s, :count => 2
-    assert_select "tr>td", :text => "Salt".to_s, :count => 2
   end
 end
