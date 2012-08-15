@@ -3,7 +3,13 @@ require 'spec_helper'
 describe User do
 
   before do
-    @user = User.new(name: "Ricky Bobby", email: "rb@insane.com", password: "twoFirstnames!")
+    attributes = {
+      name: "Ricky Bobby",
+      email: "rb@insane.com",
+      password: "twoFirstnames!",
+      password_confirmation: "twoFirstnames!",
+    }
+    @user = User.new attributes
   end
 
   subject {@user}

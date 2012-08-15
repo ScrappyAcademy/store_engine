@@ -27,7 +27,8 @@ describe UsersController do
     {
       name: "Sterling Archer",
       email: "dutchess@isis.net",
-      password: "s3cret_agenT!"
+      password: "s3cret_agenT!",
+      password_confirmation: "s3cret_agenT!"
     }
   end
 
