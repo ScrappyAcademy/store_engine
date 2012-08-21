@@ -19,6 +19,8 @@ end
 # Gems used for developing and testing, not
 # used in production environments.
 group :development, :test do
+  gem 'guard'
+  gem 'guard-rspec'
   gem 'rake'
   gem 'rspec-rails'
 end
