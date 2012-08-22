@@ -4,6 +4,10 @@
   %b Name:
   = @category.name
 
+  %ul
+  - @category.products.each do |product|
+    %li= link_to product.title, product_path(product)
+
 = link_to 'Edit', edit_category_path(@category)
 \|
 = link_to 'Back', categories_path
