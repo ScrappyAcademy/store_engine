@@ -7,10 +7,15 @@ class Product < ActiveRecord::Base
 
   scope :retired, where(:retired => true)
 
-  has_many :categorizations 
+  has_many :categorizations
+  has_many :categories, through: :categorizations
+  validates_associated :categorizations
 
-  has_many :categories, through: :categorizations 
-
+  # Add a field to store the names
+  # Use a before validate hook
+  #
+  # Use a custom validator to check the names, and setup custom messages
+  # Use a before save hook, for do the saving.
   def category_list 
     return self.categories.join(", ")
   end
@@ -20,18 +25,13 @@ class Product < ActiveRecord::Base
     category_names = categories_string.split(",").collect{|s| s.strip.downcase}.uniq
 
     category_names.each do |category_name|
-      category = Category.find_or_create_by_name(category_name)
-      categorizations = self.categorizations.new
-      categorizations.category_id = category.id
+      category = Category.find_or_initialize_by_name category_name
+      categorizations.build category: category
+      debugger
+      puts ""
+#      category = Category.find_or_initialize_by_name(category_name)
+#      categorizations = self.categorizations.new
+#      categorizations.category_id = category.id
     end 
   end
-
-
-
-
-  
-
-
-
-
 end

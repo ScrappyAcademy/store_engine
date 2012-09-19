@@ -5,6 +5,10 @@ ScrappyOrgStoreEngine::Application.routes.draw do
 
   resources :products
 
+  resources :line_items
+
+  root to: "products#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

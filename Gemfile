@@ -19,10 +19,13 @@ end
 # Gems used for developing and testing, not
 # used in production environments.
 group :development, :test do
+  gem 'debugger'
   gem 'guard'
   gem 'guard-rspec'
   gem 'rake'
   gem 'rspec-rails'
+  gem 'capybara'
+  gem 'launchy'
 end
 
 # Gems used only for developing and not
